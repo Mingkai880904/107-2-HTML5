@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        font-size: 16px;
+    }
+    .navbar{
+       background-color: black;
+       font-size: 16px;
+    }
+    .navbar a:hover{
+       background-color: #eee;
+       color: black;
+    }    
+    .navbar a{
+        float: left;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .subnav-btn{
+        outline:none;
+        border: none;
+        color:white;
+        padding: 14px 16px;
+        background-color: black;
+        margin: 0;
+        font-size: 16px;
+    }
+    .subnav-content{
+        display: none;
+        position: absolute;
+        background-color: lightgray;
+        color: white;
+    }
+    .subnav:hover .subnav-content {
+        display: block;
+    }
+    .subnav-content a:hover{
+        background-color: #eee;
+        color: black;
+    }
+    .subnav-btn:hover{
+        background-color: #eee;
+        color: black;
+    }
+</style>    
+</head>
+
+<body>
+<div class="navbar">
+ <a href="#home">Home</a>
+ <div class="subnav">
+ <button class="subnav-btn">About</button>
+  <div class="subnav-content">
+   <a href="#Department"> Department </a>
+     <a href="#Faculties"> Faculities </a>
+       <a href="#Programs"> Programs </a>
+  </div>
+ </div>
+</div>
+</body>
+</html>
