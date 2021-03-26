@@ -1,0 +1,9 @@
+input {
+  color: blue;
+  background-color: orange;
+  border: 2px solid blue;
+}
+
+p {
+  color: blue;
+}
