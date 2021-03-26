@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<style>
+* { 
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0; 
+  font-size: 16px;  
+}
+.navbar { /* for the full-screen black bar*/
+  background-color: black; 
+}
+.navbar a { /* for the Home tab on level 1 */
+  float: left;
+  color: white; 
+  padding: 14px 16px;
+  text-decoration: none;
+ } 
+.subnav .subnav-btn { /* for the levl 1 and "About" option */
+  outline:none;
+  border: none; /* occupy space on browser */ 
+  color: white;
+  padding: 14px 16px;
+  background-color: black; /* cause it to take the background colour of the parent element.*/
+  margin: 0; 
+ }
+.subnav-content {/* for the level 2 */
+  display: none; /* display:none 通常會搭配 JavaScript 一起使用，我們可以透過 JavaScript
+                    動態修改元素的 display 屬性，用以隱藏或顯示該元素，而不是將元素從頁面中刪除或重建。*/
+  position: absolute; /* absolute 元素的定位是在他所處上層容器的相對位置,套用 position: absolute 的元素，
+                         其上層容器並沒有「可以被定位」的元素的話，那麼這個元素的定位就是相對於該網頁所有內容
+                        （也就是 <body> 元素）最左上角的絕對位置*/
+  background-color: lightgrey;
+  color: white; 
+}
+.subnav:hover .subnav-content {
+  display: block; /* show two levels at the screen and display elements in block */
+}
+.subnav-content a:hover {/*hover 選擇器用於選擇滑鼠指到浮动在上面的元素 for all of options on level 2*/
+  background-color: #eee;
+  color: black; /* font color */
+}    
+    
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="#home">Home</a>  <!-- for the 1st option on the top bar  -->
+  <div class="subnav">    <!-- for the 2nd option on the top bar  -->
+       <!-- use button to show computer mouse. div also works, but not show computer mouse  -->
+    <button class="subnav-btn">About </button> 
+    <div class="subnav-content">
+      <a href="#Department ">Department  </a>
+      <a href="#Faculties ">Faculties </a>
+      <a href="#Programs">Programs</a>
+    </div>
+  </div>   
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div{
+    width: 250px;
+    height: 100px;
+    background-color: lightgray;
+    border: 1px blue dashed;
+    margin:100px 0;
+}
+#trans1 {
+    -ms-transform: translate(25px,50px); /* for IE */
+    -webkit-transform: translate(25px,50px);/* for Safari*/
+    transform: translate(25px,50px); /*horizontal move, vertical move*/
+}
+</style>
+</head>
+<body>
+<div> No move </div>
+<div id="trans1"> transform: translate(25px,50px) Rectangle is moved </div>
+</body>
+</html>

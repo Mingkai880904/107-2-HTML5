@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<style>
+    * { margin:0;   
+        font-size: 26px;}
+    body{
+        background-color: lightblue;     }
+    img{
+        width:200px;     }
+    #header{
+        height: 100px;
+        background-color: lightgray;     }
+    #nav{
+        background-color: lightyellow;     }
+    #wrapper{
+        float:left;
+        width:100%;     }
+    main{
+        margin-left: 180px;
+        background-color: lightgreen;     }
+    #aside{
+        float:left; 
+        width:180px;
+        margin-left:-100%; /* move to left, then up because of using out left-side and noplace to go */     }
+    #footer{
+        clear:both;
+        height: 50px;
+        background-color: yellow;     }
+</style>
+</head>
+<body>
+    <header id="header"> header</header>
+    <nav id="nav">  nav-id 
+        <a href="#" style="background-color: lightpink;">  level 1a inside the nav-id</a> 
+        <a href="#" style="background-color: lightgreen;">level 1b inside the nav-id</a> 
+    </nav>
+    <div id="wrapper">
+        <main>  main's scope 
+            <section>                                   
+                    <figure>
+                        <img src="./photos/c.jpg"  >
+                        <figcaption>figure's caption </figcaption>
+                    </figure>
+                      
+            </section>
+           <p> p's scope </p>
+       </main>
+    </div>
+     <aside id="aside"> aside</aside>
+    <footer id="footer"> footer</footer>
+</body>
+</html>

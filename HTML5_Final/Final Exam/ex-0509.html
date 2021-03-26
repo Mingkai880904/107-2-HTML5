@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+  width: 30%; /* 30% of browser */
+} 
+.image {
+  /* display: block; <- Not necessary! no other elements surrounded */
+  width: 30%;
+  height: auto;
+} 
+.overlay {
+  position: absolute; /* the absolute posistion of the front card and back card setting.*/
+  /* "top: 0; left: 0; bottom: 0; right: 0;"<--the block will fill all available space in the parent*/
+  top: 0;            
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 30%;
+  opacity: 0; /* transparent */
+  transition: .5s ease;
+  background-color: #008CBA;
+} 
+.container:hover .overlay {
+  opacity: 1;  /* not transparent */
+} 
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body> 
+<h2>Fade in Overlay</h2>
+<p>Hover over the image to see the effect.</p> 
+<div class="container">
+  <img src="./photos/g.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">I am a little monk!</div>
+  </div>
+</div> 
+</body>
+</html>

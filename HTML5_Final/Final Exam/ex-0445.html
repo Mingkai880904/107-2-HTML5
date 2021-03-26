@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<style>
+    * { font-size: 25px;
+        margin:0;     }
+    body{
+        background-color: lightblue;     }
+    a{
+        text-decoration: none;  /* no character effect. ex. underline/ overline/ line-through*/   }
+    img{
+        width:300px;     }
+    #header{
+        height: 100px;
+        background-color: red;
+        position:relative;/* setup relative position with top/bottom/left/right properties.  */  }
+    #nav{
+        background-color: skyblue;     }
+    #wrapper{
+        float:left;
+        width:100%;     }
+    main{
+        margin-left: 180px;
+        background-color: green;     }
+    #aside{
+        float:left;
+        width:180px;
+        margin-left:-100%;
+        background-color: lightblue;  
+        color: white;}
+    #footer{
+        clear:both;
+        height: 50px;
+        background-color: yellow;     }
+    #gohome{
+        position:absolute; /* setup the absolute position to its upper container */
+        background-color: aqua;
+        right:30px;
+        bottom:-16px;      }
+    figure{
+        position: relative;
+        left:100px;     }
+    #fixed{
+        position: fixed; /* setup a fixed position on the browser */
+        bottom:0;
+        left:90%;
+        background-color: white;     }
+    #menu{
+        background-color: white;     }
+    #menu ul{
+        padding: 0;     }
+    #menu li{
+        background-color: lightgreen;
+        list-style-type: none;  /* setup no special symbol befor each option */  
+        display: inline; /* display options at the same line */
+        font-size: 24px;
+        padding: 0px 5px;     }
+    #menu li a{
+        color: black;
+        text-decoration-line: none;     }
+    #menu li a:hover{
+        background-color: lightblue;
+        color: brown;     }
+</style>
+</head>
+<body>
+    <header id="header"> header
+    <div id="gohome">
+        <a href="#">Go back the homepage</a>    
+    </div>
+    </header>
+    <div id="menu">
+        <ul>
+            <li><a href="#">Attraction 1</a></li>
+            <li><a href="#">Attraction 2</a></li>
+            <li><a href="#">Attraction 3</a></li>
+            <li><a href="#">Attraction 4</a></li>   
+        </ul>
+    </div>
+    <nav id="nav">menu-bar  <a href="#">Level 1</a>| <a href="#">Level 2</a></nav>
+    <div id="wrapper">
+        <main> main
+            <h1>Welcome the web</h1>
+            <p> Attraction Introduction</p>
+            <section>
+                <h2>Attraction 1: Introduction</h2>
+                <article>
+                    <h3>Description....for h3</h3>
+                    <p> content for ...p</p>
+                    <figure>
+                        <img src="./photos/h.jpg">
+                        <figcaption> figure caption</figcaption>
+                    </figure>
+                </article>                  
+            </section>
+        </main>
+    </div>
+    <aside id="aside"> aside</aside>
+    <div id="fixed"><a href="#header">Go back the homepage</a></div>
+    <footer id="footer"> footer</footer>
+</body>
+</html>
