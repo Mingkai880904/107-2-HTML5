@@ -1,0 +1,258 @@
+Make your own free website on Tripod.com
+
+HTML基本語法
+Html的結構
+Body這個項目
+文件樣式
+字體
+超鏈結
+圖形索引
+表格
+Html的結構
+<hmtl> 
+<head> 
+<title>這裡面是文件的標題</title> 
+．．．這裡再寫上其它的項目成份，如果有的話 
+</head> 
+<body> 
+．．．你的文件就是要寫在這裡的 
+</body> 
+</html>
+
+[回目錄]
+Body這個項目
+範例一：<body text="white" bgcolor="#c8c8f4" link="teal" vlink="bule" alink="yellow"> 
+範例二：<body text="white" background="image/test.jpg" link="teal" vlink="bule" alink="yellow"> 
+NOTE：在使用bcakground後bgcolor將無作用
+
+bgcolor 文件的背景顏色 
+text 文件的文字顏色 
+background 文件的背景圖(可為gif或是jpg的圖檔) 
+link 文件的的連結點在未連結過時的顏色 
+alink 文件的連結點在使用者按下時的顏色 
+vlink 文件的連結點在使用者按過後的顏色
+
+ 而在顏色的設定上有兩種的方式
+
+使用RGB：RGB分別是紅綠藍三色的比例，它們的範圍 是從FF～00這是16進制的，也就是十進制的255～0
+使用顏色名稱：
+Black = "#000000"	Green = "#008000"	Silver = "#C0C0C0"
+Lime = "#00FF00"	Gray = "#808080"	Olive = "#808000"
+White = "#FFFFFF"	Yellow = "#FFFF00"	Maroon = "#800000"
+Navy = "#000080"	Red = "#FF0000"	teal = "#0000FF"
+Purple = "#800080"	Teal = "#008080"	Fuchsia = "#FF00FF"
+Aqua = "#00FFFF"
+[回目錄]
+文件樣式 
+ 
+
+文字標題大小
+
+<h6>文字範例</h6>	
+文字範例
+<h5>文字範例</h5>	
+文字範例
+<h4>文字範例</h4>	
+文字範例
+<h3>文字範例</h3>	
+文字範例
+<h2>文字範例</h2>	
+文字範例
+<h1>文字範例</h1>	
+文字範例
+跳行設定
+(範行文字<p>------)會得到如下效果	範行文字
+---------
+
+(範行文字<br>------)會得到如下效果	範行文字 
+--------
+無標題列表
+<ul> 
+<li>選項一 
+<li>選項二 
+<li>選項三 
+</ul>	
+選項一
+選項二
+選項三
+有標題列表
+<ol> 
+<li>選項一 
+<li>選項二 
+<li>選項三 
+</ol>	
+選項一
+選項二
+選項三
+主題列表
+<dl> 
+<dt>主題 
+<dd>項目 
+<dd>目項 
+<dt>主題 
+<dd>項目 
+<dd>項目 
+</dl>	
+主題
+項目
+目項
+主題
+項目
+項目
+預設格式
+<pre>
+    測試一下...
+test   test 
+  test
+</pre>
+    測試一下...
+test   test 
+  test
+對齊中央
+<center> 
+結果如左 
+</center>	
+結果就是這樣...
+分隔線
+<hr>
+<hr size="5" >
+<hr width="80%" size="5" >
+<hr width="5" size="40%">
+<hr width="80%" size="5" align="left" >
+<hr width="80%" size="5" align="right" >
+[回目錄]
+字體 
+ 
+
+字體樣式
+
+<b>範例文字 ABC abc</b>	範例文字 ABC abc
+<i>範例文字 ABC abc</i>	範例文字 ABC abc
+<u>範例文字 ABC abc</u>	範例文字 ABC abc
+<blink>範例文字 ABC abc</blink>	範例文字 ABC abc
+<em>範例文字 ABC abc</em>	範例文字 ABC abc
+<dfn>範例文字 ABC abc</dfn>	範例文字 ABC abc
+<kbd>範例文字 ABC abc</kbd>	範例文字 ABC abc
+<var>範例文字 ABC abc</var>	範例文字 ABC abc
+<code>範例文字 ABC abc</code>	範例文字 ABC abc
+<cite>範例文字 ABC abc</cite>	範例文字 ABC abc
+<samp>範例文字 ABC abc</samp>	範例文字 ABC abc
+<strong>範例文字 ABC abc</strong>	範例文字 ABC abc
+<address>範例文字 ABC abc</address>	
+範例文字 ABC abc
+有關字型
+<font size="1"><範例文字/font>;	範例文字
+<font size="2"><範例文字/font>;	範例文字
+<font size="3"><範例文字/font>;	範例文字
+<font size="4"><範例文字/font>;	範例文字
+<font size="5"><範例文字/font>;	範例文字
+<font size="6"><範例文字/font>;	範例文字
+<font size="7"><範例文字/font>;	範例文字
+NOTE：	除size外亦可加入color的屬性．．同body中的bgcolor用法．．color可改變字之顏色
+[回目錄]
+超鏈結 
+ 
+
+作鏈結用
+
+<a href="http://kaihang.tripod.com">可以按按看</a>	可以按按看，會至kaihang.tripod.com
+如在自己的首頁中則如此用之 
+<a href="#test">按下後會至頁尾</a> 
+在頁尾加上<a name="test"></a>	可以試試看 
+按下後會至頁尾
+若是在其它的頁面要連至此頁之<a name="test"> 
+則在其它頁之超鏈結中的href中的test前加入檔案名稱即可．．如下： 
+<a href="index.html#test">如此即可</a>
+作其它用
+作郵寄用<a href="mailto:kai@kellychen.com">這樣會寄至kai@kellychen.com這個位址</a>	這樣會寄至kai@kellychen.com這個位址
+作傳檔用<a href="http://members.tripod.com/kaihang/welcome.gif">如此會傳回此目錄下的test.jpg</a>	如此會傳回此目錄下的welcome.jpg
+作簽入其它ftp主機之用 
+<a href="ftp://<username>:<password>@<host>:<port>/path/filename"></a>	此處不作範例： 
+username是你的帳號 
+password就是密碼 
+host就是所要簽入的主機 
+path是路徑filename當然就是檔名囉!! 
+這些大家大概都知道吧！不過還是提一下好了．．．
+[回目錄]
+圖像索引 
+ 
+
+圖像
+
+<img src="test.gif" border="0" align="left"></img>	看出效果
+<img src="test.gif" border="0" align="right"></img>	看出效果
+<img src="test.gif" border="0" align="bottom"></img>	看出效果
+<img src="test.gif" border="0" align="middle"></img>	看出效果
+<img src="test.gif" border="0" alt="測試用"></img> 
+將游標停在圖片上一會兒就會看出效果了..	測試用
+<img src="test.gif" border="0" vspace="10" hspace="10"></img>	
+<img src="test.gif" border="0" width="50" height="50"></img>	
+圖像索引
+<img src="si.jpg" border="1" alt="索引測試" ismap usemap="#home"> 
+<map name="home"> 
+<area shape="rect" coords="40,50,140,90" href=test1.html"> 
+<area shape="rect" coords="175,55,275,95" href="test2.html"> 
+<area shape="rect" coords="40,105,140,145" href="test3.html"> 
+<area shape="rect" coords="180,110,280,150" href="test4.html"> 
+</map>
+索引測試
+[回目錄]
+表格
+<caption>範例一</caption> 
+<table border="3"> 
+<tr><td>Test<td>Test 
+<tr><td>Test<td>Test 
+</table>
+
+範例一
+Test	Test
+Test	Test
+NOTE:<tr>為換列<td>為再加一個儲存格
+
+<caption>範例二</caption> 
+<table border="3" cellpadding="20"> 
+<tr><td>Test<td>Test 
+<tr><td>Test<td>Test 
+</table>
+範例二
+Test	Test
+Test	Test
+<caption>範例三</caption> 
+<table border="3" cellspacing="20"> 
+<tr><td>Test<td>Test 
+<tr><td>Test<td>Test 
+</table>
+範例三
+Test	Test
+Test	Test
+<caption>範例四</caption> 
+<table border="3" width="50%" height="80"> 
+<tr><td>Test<td>Test 
+<tr><td>Test<td>Test 
+</table>
+範例四
+Test	Test
+Test	Test
+<caption>範例五</caption> 
+<table border="10" width="50%" height="80"> 
+<tr><td>Test<td>Test 
+<tr><td>Test<td>Test 
+</table>
+ 範例五
+Test	Test
+Test	Test
+<caption>範例六</caption> 
+<table border="3" width="50%" height="80"> 
+<tr><td>Test<td>Test<td>Test<td>Test 
+<tr><td>Test<td rowspan="2" colspan="2">Test<td>Test 
+<tr><td>Test<td>Test 
+<tr><td>Test<td>Test<td>Test<td>Test 
+</table> 
+NOTE:rowspan是這一儲存格要佔幾個儲存格的寬度,colspan是這一儲存格要佔幾個儲存格的高度,而被它佔用的空間就不能再用了..所以在第三行就省了兩個儲存格了,也就是省了兩個<td>
+範例六
+Test	Test	Test	Test
+Test	Test	Test
+Test	Test
+Test	Test	Test	Test
+
+[回目錄]
